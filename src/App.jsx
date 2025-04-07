@@ -6,7 +6,7 @@ import Signup from './components/signup/Signup';
 import Dashboard from './components/dashboard/Dashboard';
 import Home from './components/dashboard/home/Home';
 import Profile from './components/dashboard/profile/Profile';
-import Notification from './components/dashboard/notification/notification';
+import Notification from './components/dashboard/notification/Notification';
 import Settings from './components/dashboard/settings/Settings';
 import Preference from './components/dashboard/settings/preference/Preference';
 
