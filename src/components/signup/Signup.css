@@ -1,0 +1,183 @@
+ .signup-container {
+    display: flex;
+}
+
+.left-section-signup {
+    width: 56%;
+    margin: 10px;
+}
+
+.image_three {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.text-block {
+    color: #e7e5e5;
+}
+
+.right-section-signup {
+    width: 40%;
+    padding: 40px;
+    margin: 30px;
+}
+
+
+.container_one-signup {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.container_one_span-signup {
+    font-size: 1.5rem;
+    color: #c73951;
+}
+
+.container_one_link-signup {
+    font-size: medium;
+    text-decoration: none;
+    color: #9ea3a0
+}
+
+ 
+.container_one_link_span-signup {
+    color: #c73951;
+    margin-top: 20px;
+    font-size: 16px;
+}
+ 
+.container_two-signup {
+    font-size: 28px;
+    padding: 10px;
+}
+
+
+.container_four_signup {
+    margin-top: 30px;
+    padding: 10px;
+
+}
+
+
+.label_signup {
+    display: block;
+    font-weight: 40px;
+    font-size: 23px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input_signup[type="text"],
+.input_signup[type="email"],
+.input_signup[type="password"],
+.input_signup[type="number"] {
+    width: 100%;
+    height: 4rem;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.container_four_input_two_signup_ {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+
+}
+
+ .input_signup[type="submit"] {
+    background-color: #c73951;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    width: 100%;
+    height: 3.5rem;
+    margin-top: 30px;
+  }
+  
+  .input_signup[type="submit"]:hover {
+    background-color: #dc3551;
+  }  
+
+
+  
+@media (max-width: 1024px) {
+    .signup-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .left-section-signup,
+    .right-section-signup {
+      width: 90%;
+      margin: 10px auto;
+    }
+  
+    .container_two-signup {
+      font-size: 22px;
+    }
+  
+    .label_signup {
+      font-size: 20px;
+    }
+  
+    .input_signup[type="text"],
+    .input_signup[type="email"],
+    .input_signup[type="password"],
+    .input_signup[type="number"] {
+      font-size: 14px;
+      height: 3.2rem;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .container_one-signup {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  
+    .container_one_span-signup {
+      font-size: 1.2rem;
+    }
+  
+    .container_one_link-signup {
+      font-size: 14px;
+    }
+  
+    .container_two-signup {
+      font-size: 18px;
+      padding: 10px 5px;
+    }
+  
+    .label_signup {
+      font-size: 16px;
+    }
+  
+    .input_signup[type="submit"] {
+      height: 3rem;
+      font-size: 16px;
+    }
+  
+    .container_four_input_two_signup_ {
+      flex-direction: column;
+    }
+  
+    .input-group {
+      min-width: 100%;
+    }
+  }
+  

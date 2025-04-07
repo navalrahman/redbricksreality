@@ -1,0 +1,158 @@
+
+.notification-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.heading-container {
+    font-size: 20px;
+}
+
+.list-container {
+    margin-top: 20px;
+    border: 1px solid gray;
+    padding: 20px;
+}
+
+.list-container-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.list-container-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.heading {
+    width: auto;
+    padding: 5px;
+    border-radius: 10px;
+    color: #ffffff;
+    background-color: rgb(82, 46, 211);
+}
+
+.avatar {
+    width: 30px;
+    height: 20px;
+    border-radius: 50%;
+    fill: red;
+}
+
+.avatar:hover {
+    cursor: pointer;
+    fill: red;
+}
+
+.list-container-heading-time {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.list-container-clock {
+    width: 20px;
+    height: 20px;
+}
+
+.list-conatiner-content {
+    width: 1100px;
+    gap: 10;
+    margin-left: 40px;
+    padding: 10px;
+}
+
+.list-conatiner-content p {
+    margin-top: 10px;
+}
+
+.list-container-image-name {
+    margin-top: 10px;
+    display: flex;
+}
+
+.user-avatar {
+    width: 30px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.user-name {
+    color: rgb(234, 114, 114);
+}
+
+/* --- Responsive Styles Below --- */
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .list-conatiner-content {
+        width: 90%;
+        margin-left: 20px;
+        flex-wrap: wrap;
+    }
+
+    .list-container-content {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .avatar,
+    .user-avatar {
+        width: 25px;
+        height: 20px;
+    }
+
+    .heading-container {
+        font-size: 18px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .notification-container {
+        padding: 10px;
+        margin: 5px;
+    }
+
+    .list-container {
+        padding: 15px;
+    }
+
+    .list-conatiner-content {
+        width: 100%;
+        margin-left: 0;
+        padding: 10px 0;
+        flex-direction: column;
+    }
+
+    .list-container-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
+
+    .list-container-heading {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .list-container-heading-time {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .avatar,
+    .user-avatar {
+        width: 20px;
+        height: 20px;
+    }
+
+    .heading-container {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,39 @@
+.p-datatable .p-datatable-thead th {
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    background-color: #f8f9fa; 
+}
+
+.p-datatable .p-datatable-tbody tr td {
+    padding-top: 25px !important; 
+    font-size: 0.9rem;
+    color: #333;
+    padding-left: 10px;
+}
+
+.action-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 2px 5px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.action-button:hover {
+    background-color: #0056b3;
+}
+
+.product-image {
+    width: 50px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.flex-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
