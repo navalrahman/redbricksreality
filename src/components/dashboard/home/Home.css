@@ -22,7 +22,7 @@
 .dashboard-images {
     margin-top: 10px;
     /* border: 1px solid green; */
-    width: 80vw;
+    width: 82vw;
     margin-left: 10px;
     height: 251px;
     background-color: rgb(144, 26, 26);
@@ -53,7 +53,7 @@
 }
 
 .dashboard-images-one {
-    width: 45%;
+    width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -134,7 +134,7 @@
 
 .charts-one {
     border: 2px solid gray;
-    width: 65%;
+    width: 60%;
     padding: 20px;
     border-radius: 10px;
 }
@@ -254,12 +254,12 @@
     margin-top: 10px;
     display: flex;
     justify-content: space-between;
-    /* margin-left: 10px; */
+    width: 100%;
 }
 
 .dashboard-graph-earnings {
     border: 2px solid gray;
-    width: 32%;
+    width: 28%;
     /* height: 100%; */
     padding: 20px;
     border-radius: 10px;
@@ -304,7 +304,7 @@
 
 .dashboard-graph-table-one{
     border: 2px solid gray;
-    width: 65%;
+    width: 64%;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -325,9 +325,7 @@
 
 .table-one-data{
     margin-top: 10px;
-    /* border: 1px solid black; */
-    /* display: flex; */
-    /* flex-direction: row; */
+    /* width: 100%; */
     justify-content: space-between;
 }
 
@@ -387,96 +385,8 @@
     border: 1px solid rgb(225, 225, 75);
 }
 
-@media (max-width: 1024px) {
-    .dashboard-main {
-      flex-direction: column;
-    }
-  
-    .sidebar {
-      width: 100%;
-      flex-direction: row;
-      overflow-x: auto;
-      box-shadow: none;
-      border-bottom: 1px solid #ccc;
-    }
-  
-    .nav-link {
-      justify-content: center;
-      flex-direction: row;
-      font-size: 14px;
-      padding: 8px;
-    }
-  
-    .dashboard-containers,
-    .dashboard-images,
-    .dashboard-sub-containers,
-    .dashboard-charts-one,
-    .dashboard-graph-table {
-      flex-direction: column;
-      width: 100%;
-      margin: 0 auto;
-    }
-  
-    .container-one,
-    .charts-one,
-    .charts-two,
-    .dashboard-graph-earnings,
-    .dashboard-graph-table-one {
-      width: 100%;
-      margin-top: 15px;
-    }
-  
-    .heading-one,
-    .heading-two,
-    .heading-three,
-    .heading-four,
-    .heading-five {
-      width: auto;
-      margin: 10px;
-    }
-  }
-  
-  @media (max-width: 600px) {
-    .sidebar {
-      flex-direction: column;
-      padding: 10px;
-    }
-  
-    .nav-link {
-      flex-direction: row;
-      font-size: 12px;
-      padding: 6px;
-    }
-  
-    .nav-link img {
-      width: 16px;
-      margin-right: 5px;
-    }
-  
-    .main-heading {
-      flex-direction: column;
-      align-items: flex-start;
-      padding: 10px;
-    }
-  
-    .heading-one,
-    .heading-two,
-    .heading-three,
-    .heading-four,
-    .heading-five {
-      width: 100%;
-      justify-content: flex-start;
-    }
-  
-    .brightness {
-      width: 40px;
-      height: 40px;
-    }
-  
-    .brightness-icon {
-      width: 20px;
-    }
-  
+  @media screen and (max-width: 600px), (max-width: 1024px) {
+    
     .dashboard-images {
       flex-direction: column;
       height: auto;
@@ -492,31 +402,127 @@
       flex-direction: column;
       gap: 10px;
     }
-  
-    .charts-two-three {
-      flex-direction: column;
-      align-items: center;
+
+    .container-one{
+        width: 100%;
     }
-  
-    .charts-two-four {
-      flex-direction: column;
-      align-items: center;
-      gap: 10px;
+
+    .dashboard-charts-one{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
     }
-  
-    .withdraw-button,
-    .deposit-button {
-      width: 100%;
+    
+    .charts-one{
+        width: 90%;
     }
-  
-    .table-data {
-      flex-direction: column;
-      align-items: flex-start;
-      height: auto;
+
+    .charts-two{
+        width: 90%;
     }
-  
-    .table-datas-row {
-      flex-direction: column;
+    
+    .dashboard-graph-table{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;      
     }
+
+    .dashboard-graph-earnings{
+        width: 90%;
+    }
+
+    .dashboard-graph-table-one{
+        width: 90%;
+    }
+
+    .table-one-heading{
+        width: 100%;
+    }
+
+    .table-one-data {
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        gap: 16px;
+        padding-bottom: 10px;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+      }
+    
+      .table-one-data::-webkit-scrollbar {
+        height: 6px;
+      }
+    
+      .table-one-data::-webkit-scrollbar-thumb {
+        background-color: #ccc;
+        border-radius: 4px;
+      }
+    
+      .table-data {
+        flex: 0 0 auto;
+        min-width: 280px;
+        max-width: 300px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 16px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        scroll-snap-align: start;
+      }
+    
+      .table-datas-row {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 12px;
+      }
+    
+      .image-one img {
+        width: 60px;
+        height: auto;
+        border-radius: 6px;
+      }
+    
+      .data-one h3 {
+        font-size: 16px;
+        margin: 0;
+      }
+    
+      .data-one p {
+        font-size: 14px;
+        color: #666;
+        margin: 0;
+      }
+    
+      .data-two, .data-three, .data-four {
+        margin-top: 10px;
+      }
+    
+      .data-two p,
+      .data-three p,
+      .data-four p {
+        font-size: 12px;
+        color: #999;
+        margin-bottom: 4px;
+      }
+    
+      .data-two h4,
+      .data-three h4 {
+        font-size: 15px;
+        margin: 0;
+      }
+    
+      .data-four button {
+        padding: 6px 12px;
+        font-size: 13px;
+        background-color: #f3c623;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+    
+
   }
   

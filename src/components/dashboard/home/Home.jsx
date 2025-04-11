@@ -217,7 +217,7 @@ const Home = () => {
           </div>
 
           <div className='table-one-data'>
-            <div className='table-data'>
+            {/* <div className='table-data'>
               <div className='table-datas-row'>
                 <div className='image-one'>
                   <img src={image} alt="" width="70px" />
@@ -243,7 +243,7 @@ const Home = () => {
                 <p>Status</p>
                 <button>pending</button>
               </div>
-            </div>
+            </div> */}
 
             <div className='table-data'>
               <div className='table-datas-row'>

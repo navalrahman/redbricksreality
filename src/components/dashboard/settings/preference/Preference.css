@@ -92,53 +92,5 @@
     margin-bottom: 25px;
 }
 
-@media (max-width: 1024px) {
-    .preference-heading {
-      width: 100%;
-    }
-  
-    .themes {
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
-  
-    .theme-card {
-      width: 45%;
-    }
-  
-    .preference-form-div-tag {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    .preference-form-tag label,
-    .preference-form-tag input {
-      width: 100%;
-    }
-  
-    .preference-form-tag input {
-      margin-top: 10px;
-    }
-  }
-  
-  @media (max-width: 600px) {
-    .theme-card {
-      width: 100%;
-    }
-  
-    .preference-heading h2,
-    .preference-sub-heading h2 {
-      font-size: 20px;
-    }
-  
-    .preference-form-tag label {
-      font-size: 16px;
-    }
-  
-    .preference-form-tag input {
-      font-size: 14px;
-      height: 3rem;
-    }
-  }
+
   

@@ -113,8 +113,7 @@
   }  
 
 
-  
-@media (max-width: 1024px) {
+  @media screen and (max-width: 600px), (max-width: 1024px) {
     .signup-container {
       flex-direction: column;
       align-items: center;
@@ -125,38 +124,36 @@
       width: 90%;
       margin: 10px auto;
     }
-  
-    .container_two-signup {
-      font-size: 22px;
-    }
-  
-    .label_signup {
-      font-size: 20px;
-    }
-  
-    .input_signup[type="text"],
-    .input_signup[type="email"],
-    .input_signup[type="password"],
-    .input_signup[type="number"] {
-      font-size: 14px;
-      height: 3.2rem;
-    }
-  }
-  
-  @media (max-width: 600px) {
+
     .container_one-signup {
       flex-direction: column;
       align-items: flex-start;
       gap: 10px;
     }
+
+    .container_one-signup {
+      /* border: 1px solid black; */
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      /* padding: 10px; */
+      /* gap: 10px; */
+    }
   
-    .container_one_span-signup {
-      font-size: 1.2rem;
+    .container_one-signup h2 {
+      font-size: 14px;
+    }
+
+    
+    .container_one-signup span {
+      font-size: 14px;
+      flex-direction: row-reverse;
     }
   
     .container_one_link-signup {
-      font-size: 14px;
+      font-size: 8px;
     }
+  
   
     .container_two-signup {
       font-size: 18px;

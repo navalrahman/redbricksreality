@@ -202,7 +202,7 @@
 
 
 
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
   .login-container {
     flex-direction: column;
     align-items: center;
@@ -215,7 +215,7 @@
   }
 
   .container_three {
-    flex-direction: column;
+    flex-direction: row;
     gap: 10px;
   }
 
@@ -230,31 +230,52 @@
     width: 10%;
   }
 
-  .container_three_image_two img,
-  .container_three_image_three img {
+  .container_three_image_two img{
+    width: 100px;
+  }
+  
+  .container_three_image_three img{
     width: 40px;
   }
 }
+ */
 
+@media screen and (max-width: 600px) ,  (max-width: 1024px) {
+  .login-container {
+    flex-direction: column;
+    align-items: center;
+  }
 
-@media (max-width: 600px) {
+  .left-section,
+  .right-section {
+    width: 90%;
+    margin: 10px auto;
+  }
+
   .text-block h4,
   .text-block p {
     font-size: 18px;
   }
 
   .container_one {
-    flex-direction: column;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction: column; */
     padding: 10px;
-    gap: 10px;
+    /* gap: 10px; */
   }
 
   .container_one h2 {
-    font-size: 20px;
+    font-size: 16px;
+  }
+  
+  .container_one span {
+    font-size: 16px;
   }
 
   .container_one_link {
-    font-size: 14px;
+    font-size: 10px;
   }
 
   .container_two {
@@ -274,19 +295,40 @@
     font-size: 14px;
   }
 
+  .container_three {
+    /* border: 1px solid black; */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .container_three_image_one {
+    width: 46%;
+  }
+
+  .container_three_image_one img{
+    width: 50px;
+  }
+  
+  .container_three_image_two,
+  .container_three_image_three {
+    width: 14%;
+  }
+  .container_three_image_two img{
+    width: 100px;
+    margin-left: -20px;
+  }
+
+
   .container_three_image_one span {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .link_forgot {
     font-size: 14px;
   }
 
-  .container_three_image_one img,
-  .container_three_image_two img,
-  .container_three_image_three img {
-    width: 30px;
-  }
 }
 
 

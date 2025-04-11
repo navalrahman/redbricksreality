@@ -205,37 +205,3 @@
     }
   }
   
-  @media (max-width: 600px) {
-    .account-settings-details-profile-picture-image {
-      width: 60px;
-      height: 60px;
-    }
-  
-    .account-settings-details-profile-picture-upload,
-    .account-settings-details-profile-picture-delete,
-    .deleteaccount,
-    .learnmore {
-      width: 100%;
-      font-size: 14px;
-    }
-  
-    .account-settings-delte-divtwo-buttons {
-      flex-direction: column;
-      width: 100%;
-    }
-  
-    .account-settings-details-profile-picture {
-      padding: 10px;
-    }
-  
-    .account-settings-details-profile-picture-details {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    .account-settings-details-form-div-input {
-      font-size: 14px;
-      padding: 12px;
-    }
-  }
-  

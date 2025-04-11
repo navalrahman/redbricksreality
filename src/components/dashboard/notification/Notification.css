@@ -86,36 +86,11 @@
     color: rgb(234, 114, 114);
 }
 
-/* --- Responsive Styles Below --- */
-
-/* Tablet */
-@media (max-width: 1024px) {
-    .list-conatiner-content {
-        width: 90%;
-        margin-left: 20px;
-        flex-wrap: wrap;
-    }
-
-    .list-container-content {
-        flex-wrap: wrap;
-        gap: 8px;
-    }
-
-    .avatar,
-    .user-avatar {
-        width: 25px;
-        height: 20px;
-    }
-
-    .heading-container {
-        font-size: 18px;
-    }
-}
 
 /* Mobile */
-@media (max-width: 600px) {
+@media screen and (max-width: 600px),(max-width: 1024px) {
     .notification-container {
-        padding: 10px;
+        padding: 30px;
         margin: 5px;
     }
 
