@@ -97,7 +97,7 @@
 
 .container_three_image_one {
   width: 70%;
-  height: 3.5rem;
+  height: 1rem;
   display: flex;
   align-items: center;
   background-color: rgb(223, 172, 172);
@@ -107,25 +107,29 @@
 
 
 .container_three_image_one img {
-  width: 16%;
+  width: 12%;
   border-radius: 50px;
+  background-color: rgb(223, 172, 172);
 }
 
 
 
 .container_three_image_one span {
   font-size: large;
-  margin-left: 5px;
+  
+  margin-left: 15px;
   color: #c73951;
 }
 
 
 .container_three_image_two {
   width: 20%;
+  /* background-color: black; */
 }
 
 .container_three_image_two img {
-  width: 120%;
+  width: 100%;
+  background-color: #9ea3a0;
 }
 
 
@@ -135,7 +139,7 @@
 }
 
 .container_three_image_three img {
-  width: 65%;
+  width: 55%;
   border-radius: 40px;
 }
 
@@ -157,20 +161,40 @@
   text-align: left;
 }
 
-
+/* 
 .input[type="text"],
 .input[type="email"],
 .input[type="password"] {
   width: 100%;
-  height: 4rem;
-  padding: 10px;
+  height: 3.5rem;
+  padding-left: 25px;
   margin-bottom: 15px;
   border: 1px solid #ccc;
   border-radius: 10px;
   font-size: 16px;
   margin-bottom: 25px;
+} */
+
+
+.input[type="text"],
+.input[type="email"],
+.input[type="password"] {
+  width: 100%;
+  height: 3.5rem;
+  padding-left: 25px;
+  margin-bottom: 25px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: border-color 0.2s ease; /* Optional smooth transition */
 }
 
+.input[type="text"]:focus,
+.input[type="email"]:focus,
+.input[type="password"]:focus {
+  border: 1px solid blue;
+  outline: none; /* optional: removes default blue outline */
+}
 
 
 .input[type="submit"] {

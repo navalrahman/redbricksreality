@@ -100,8 +100,8 @@ const Home = () => {
         <div className='container-one'>
           <div className='container-one-heading'>
             <h3>Total Investments</h3>
-            <h2>1,23,890</h2>
-            <p>Sine Yesterday</p>
+            <h2>₹ 1,23,890</h2>
+            <p>Since Yesterday</p>
           </div>
           <div className='container-one-image'>
             <img src={graph} alt="" />
@@ -111,8 +111,8 @@ const Home = () => {
         <div className='container-one'>
           <div className='container-one-heading'>
             <h3>Total Income</h3>
-            <h2>1,45,000</h2>
-            <p>Sine last week</p>
+            <h2>₹ 1,45,000</h2>
+            <p>Since last week</p>
           </div>
           <div className='container-one-image'>
             <img src={graph} alt="" />
@@ -123,8 +123,8 @@ const Home = () => {
         <div className='container-one'>
           <div className='container-one-heading'>
             <h3>Total Withdrawals</h3>
-            <h2>23,789</h2>
-            <p>Sine last Month</p>
+            <h2>₹ 23,789</h2>
+            <p>Since last Month</p>
           </div>
           <div className='container-one-image'>
             <img src={graph} alt="" />
